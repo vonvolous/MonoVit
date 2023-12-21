@@ -61,3 +61,6 @@ $ CUDA_VISIBLE_DEVICES=0 python train.py --batch_size 14 --num_epochs 20 --model
   2. build your own dataset, and create a new split file
   3. add your dataset class in init.py and trainer.py(datasets_dict)
 
+## Model
+Please download our model (if you need)
+https://drive.google.com/file/d/1Vhluj7ygwG6_BXAydDH0lsvrrsdb4RBP/view?usp=sharing

@@ -3,6 +3,10 @@
 reference
 https://github.com/zxcqlf/MonoViT
 
+For training, please download monodepth2, replace the depth network, and revise the setting of the depth network, the optimizer and learning rate according to trainer.py.
+
+Because of the different torch version between MonoViT and Monodepth2, the func transforms.ColorJitter.get_params in dataloader should also be revised to transforms.ColorJitter.
+
 ## Setting
 ### 공통 설치 항목
 - 실험 환경 : Ubuntu 18.04 CUDA 9.1
@@ -39,9 +43,7 @@ $ pip install timm einops IPython
     |  |  |--s_125/
     |  |  |  |--0000000000.jpg
 
-For training, please download monodepth2, replace the depth network, and revise the setting of the depth network, the optimizer and learning rate according to trainer.py.
 
-Because of the different torch version between MonoViT and Monodepth2, the func transforms.ColorJitter.get_params in dataloader should also be revised to transforms.ColorJitter.
 ## Training
 
 - Download the ImageNet-1K pretrained MPViT model(https://dl.dropbox.com/s/y3dnmmy8h4npz7a/mpvit_small.pth) to ./ckpt/.

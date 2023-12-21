@@ -1,4 +1,4 @@
-# MonoVits
+# MonoVit
 
 reference
 https://github.com/zxcqlf/MonoViT
